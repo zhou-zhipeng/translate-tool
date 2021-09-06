@@ -16,5 +16,5 @@ $ npm install node-xlsx --save
 ```bash 
 $ node index.js
 ```
-##### step5: 在json文件夹中生成新的json文件格式化,拷贝到项目需要的地方,能准确替换80%以上,找不到的会被标记 `===缺失`
+##### step5: 在json文件夹中生成新的json文件格式化(例如:en-ES.json),拷贝到项目需要的地方,能准确替换80%以上,找不到的会被标记 `===缺失`
 
