@@ -1,7 +1,7 @@
 const fs = require("fs");
 const xlsx = require('node-xlsx')
 
-const i18n = 'i18n' // 修改成自己的文件名
+const i18n = 'i18n' // 可修改成自己的文件名
 const sheets = xlsx.parse(`./excel/${i18n}.xlsx`)
 
 
@@ -65,7 +65,7 @@ function getExcel () {
 }
 function createJson (json) {
     const buffer = JSON.stringify(json)
-    const filename = 'es-ES' // 修改成需要生成json的文件名
+    const filename = 'es-ES' // 可修改成需要生成json的文件名
     fs.writeFile(`./json/${filename}.json`, buffer, function(err) {
         if (err) {
             console.log("Write failed: " + err);
